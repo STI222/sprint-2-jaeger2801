@@ -24,7 +24,7 @@ def calcular_similitud():
     datos2 = data[data['nombre'] == nombre2].iloc[:, 1:].values
     
     # Calcular la similitud coseno entre los dos conjuntos de datos
-    # Se usa el método .flatten para transformar los datos en una matriz tridimensional
+    # Se usa el método .flatten para transformar los datos en una matriz unidimensional
     dot_product = np.dot(datos1.flatten(), datos2.flatten())
     
     # Se usa el método .linalg para calcular la norma Euclidiana de cada vector
